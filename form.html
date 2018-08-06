@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">   
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Welcome</title>
+	
+	<meta http-equiv="content-type" 
+		content="text/html;charset=utf-8" />
+
+		<link rel="stylesheet" type="text/css" href="form.css" />
+		<script src="http://jadran.sdsu.edu/jquery/jquery.js"></script>
+		<script src="ajax_get_lib.js"></script>
+		<script src="form.js"></script>
+		<script src="form2.js"></script>
+</head>	
+
+<body>
+	<div>
+		<h1>Enrollment Form</h1>
+		<fieldset>
+			<legend>Personal Information</legend>
+		<form name="customer"
+			  action="process_request.php"
+			  method="post"
+			  enctype="multipart/form-data">
+	
+		<label>First name:</label>
+		<input type="text" name="first_name" size="25" id="first_name" /><br />
+		<label>Middle Name:</label>
+		<input type="text" name="middle_name" size="25" id="middle_column" /><i>optional</i><br />
+		<label>Last name:</label>
+		<input type="text" name="last_name" size="25" id="last_name" /><br />
+		<label>Address:</label>
+		<input type="text" name="address" size="40" id="address" /><br />
+		<label>City:</label>
+		<input type="text" name="city" size="25" id="city" /><br />
+		<label>State:</label>
+		<input type="text" name="state" size="3" id="state" /><br />
+		<label>Zipcode:</label>
+		<input type="text" name="zipcode" size="10" maxlength="10" id="zipcode" /><br />
+		<label>Phone:</label>
+		(<input type="text" name="area_phone" size="4" maxlength="3" />)
+		<input type="text" name="prefix_phone" size="4" maxlength="3" />
+		<input type="text" name="phone" size="5" maxlength="4" /><br />
+		<label>Email Address:</label>
+		<input type="email" name="email_address" size="25" placeholder="user@domain.com" 
+		id="email_address" /><br />
+		<label>Date of Birth</label>
+		<input type="text" name="date_of_birth" placeholder="dd/mm/yy" /><br />
+		<label>Medical Conditions</label>
+		<input type="text" name="medical_conditions" /><br />
+		<hr />
+		<label>Gender</label>
+		<input type="radio" name="gender" value="male" />Male
+		<input type="radio" name="gender" value="female" />Female
+		<br />
+		<label>Experience</label>
+		<input type="radio" name="experience" value="novice" />Novice
+		<input type="radio" name="experience" value="experienced" />Experienced
+		<input type="radio" name="experience" value="expert" />Expert
+		<br />
+		<label>Category</label>
+		<input type="radio" name="category" value="teen" />Teen
+		<input type="radio" name="category" value="adult" />Adult
+		<input type="radio" name="category" value="senior" />Senior
+		<br />
+		<label>File Upload</label>
+		
+		<table>
+			<tr>
+				<td>Image Name:</td>
+				<td><input type="text" name="name" size="34" /></td>
+			</tr>
+			<tr>
+				<td>Description</td>
+				<td><textarea rows="5" cols="30" name="description"></textarea></td>
+			</tr>
+			<tr>
+				<td>File:</td>
+				<td><input type="file" name="picture" id="picture" /></td>
+			</tr>
+		</table>
+		<div id="message_line">&nbsp;</div>
+		<div id="button_panel">
+			<input type="submit" value="Send Data" class="button" />
+			<input type="reset" value="Clear Data" class="button" />
+		</div>
+		</form>
+		<h3 id="status"> &nbsp;</h3>
+		<div id="pic"></div>
+		<h3 id="answer"></h3>
+		</fieldset>
+		
+	</div>
+	
+</body>
+
+
+</html>
