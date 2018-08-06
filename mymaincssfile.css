@@ -19,7 +19,7 @@ h1 {
 	width: 200px;
 	height: 100%;
 	color: white;
-	background-color: #900;
+	background-color: #341fba;
 	}
 	
 #left_column a {
@@ -45,7 +45,7 @@ h1 {
 	width: 200px;
 	height: 100%;
 	color: white;
-	background-color: #900;
+	background-color: #341fba;
 	}
 	
 #right_column p {
@@ -86,7 +86,7 @@ h1 {
 	color: #f49b42;
 	}
 
-.sdsu {
+.jl {
 	width: 150px;
     float: left;
 	display: block;
@@ -94,7 +94,7 @@ h1 {
 	border: 1px solid black;
 	}	
 	
-.runners {
+.jelly {
 	text-align: center;
 	width: 600px;
 	margin: 20px;
