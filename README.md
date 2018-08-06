@@ -1,2 +1,2 @@
-# CS545Forms
+# JohnLeonhardt.github.io
 Form handling
