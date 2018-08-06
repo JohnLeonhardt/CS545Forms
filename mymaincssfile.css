@@ -87,7 +87,7 @@ h1 {
 	}
 
 .jl {
-	width: 150px;
+	/*width: 150px;*/
     float: left;
 	display: block;
 	margin: -40px 10px 0 10px;
@@ -96,7 +96,7 @@ h1 {
 	
 .jelly {
 	text-align: center;
-	width: 600px;
+	/*width: 600px;*/
 	margin: 20px;
 	padding: 15px;
 	float: left;
